@@ -1,0 +1,33 @@
+.container{
+    border: 2px solid black;
+    display: inline;
+    width: auto;
+    display: grid;
+    width: fit-content;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+}
+
+
+.item{
+    border: 2px solid red;
+}
+
+.item-1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 1 / 5;
+    background-color: aqua;
+}
+
+.item-2{
+    grid-area: 2 / 4 / 4 / 6;
+    z-index: 2;
+    background-color: darkcyan;
+}
+
+.item-3{
+    grid-area: 3 / 1 / -1 / -1;
+    background-color: blanchedalmond;
+}
+
